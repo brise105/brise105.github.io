@@ -184,8 +184,8 @@
 		}
 		
 		.rectangle {
-			height: 90vh;
-			width: 90vw;
+			height: 80vh;
+			width: 60vw;
 			border-radius: 25px;
 			background-color: #ffffff;
 			position: relative;
@@ -195,12 +195,36 @@
 			bottom: 0;
 			margin: auto;
 		}
+        
+      .page {
+        float: left;
+        width: 100vw;
+        height: 150vh;
+      }
+
+      .docScroller {
+        overflow-x: hidden;
+        position: absolute;
+        top: 100;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        scroll-snap-points-y: repeat(100%);
+        scroll-snap-type: mandatory;
+        scroll-snap-destination: 100% 0%;
+      }
+      .inside {
+        width: 80vw;
+        margin: 10vh 0 0 10vw;
+        height: 120vh;
+      }
 	</style>
 </head>
 
 <body>
 
   <!----------------------HOME-SECTION------------------------>
+  <div class="docScroller">
   <div class="header">
     <h2 id="Home">Brandon Thunder Brise&#241;o</h2>
     <p>Political Analyst & Software Engineer</p>
@@ -226,35 +250,47 @@
       <a href="https://brise105.github.io/#Github">Github</a>
       <a href="https://brise105.github.io/#Portfolio">Portfolio</a>
     </div>
-  </div>
+      </div>
   
-  <div class="parallax"></div>
+  <!--------------------HOME SECTION--------------------->
+    <div class="page parallax">
+        <div class="inside">
+
+        </div>
+  	</div>
 
   <!----------------------SECTION1------------------------>
-  <div style="height:300px; background-color:#bb6834;">
-  <div id="Resume" style=" text-align: center; font-size: 12vw; font-family: Megrim; font-color: #000000; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white, -2px 0 4px black, 0 2px 4px black, 2px 0 4px  black, 0 -2px 4px black; font-weight: bold; position: relative; top: 50%; transform: translateY(-50%); ">Resume</div>
-  </div>
+    <div class="page parallax2">
+      <div class="inside">
+      <div>
+        <div id="Resume" style="background-color: rgba(187, 104, 52, 0.1); border: 15px double #bb6834; border-radius: 0.1em; text-align: center; font-size: 10vw; font-family: Megrim; font-color: #000000; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white, -2px 0 4px black, 0 2px 4px black, 2px 0 4px  black, 0 -2px 4px black; font-weight: bold; position: relative; top: 40%; transform: translateY(40%);">Resume</div>
+      </div>
   
-  <div class="parallax2">
-  	<div class="rectangle" style="background-color: #bb6834; background-image: url('https://usercontent.irccloud-cdn.com/file/XrultFnN/geometric-patterns-1978688_960_720.png');"></div>
+      <div class="rectangle" style="background-color: #bb6834; background-image: url('https://usercontent.irccloud-cdn.com/file/XrultFnN/geometric-patterns-1978688_960_720.png');"></div>
+  </div>  
   </div>
 	
   <!----------------------SECTION2------------------------>
-  <div style="height:300px; background-color: #34babb;">
-  <div id="Github" style=" text-align: center; font-size: 12vw; font-family: Megrim; font-color: #000000; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white, -2px 0 4px black, 0 2px 4px black, 2px 0 4px  black, 0 -2px 4px black; font-weight: bold; position: relative; top: 50%; transform: translateY(-50%);">Github</div>
-  </div>
-  
-  <div class="parallax3">
-  	<div class="rectangle" style="background-color: #34babb; background-image: url('https://usercontent.irccloud-cdn.com/file/ahPqNvR1/computer-3163436_960_720.png')"></div>
-  </div>
+  <div class="page parallax3">
+    <div class="inside">
+      <div>
+      <div id="Github" style="background-color: rgba(52, 186, 187, 0.1); border: 15px double #34babb; border-radius: 0.1em; text-align: center; font-size: 10vw; font-family: Megrim; font-color: #000000; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white, -2px 0 4px black, 0 2px 4px black, 2px 0 4px  black, 0 -2px 4px black; font-weight: bold; position: relative; top: 40%; transform: translateY(40%);">Github</div>
+      </div>
+
+        <div class="rectangle" style="background-color: #34babb; background-image: url('https://usercontent.irccloud-cdn.com/file/ahPqNvR1/computer-3163436_960_720.png')"></div>
+  	</div>
+  </div>    
 	
   <!----------------------SECTION3------------------------>
-  <div style="height:300px;background-color:#7934bb;">
-  <div id="Portfolio" style=" text-align: center; font-size: 12vw; font-family: Megrim; font-color: #000000; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white, -2px 0 4px black, 0 2px 4px black, 2px 0 4px  black, 0 -2px 4px black; font-weight: bold; position: relative; top: 50%; transform: translateY(-50%);">Portfolio</div>
+  <div class="page parallax4">
+    <div class="inside">
+  <div>
+  <div id="Portfolio" style="background-color: rgba(121, 52, 187, 0.1); border: 15px double #7934bb; border-radius: 0.1em; text-align: center; font-size: 10vw; font-family: Megrim; font-color: #000000; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white, -2px 0 4px black, 0 2px 4px black, 2px 0 4px  black, 0 -2px 4px black; font-weight: bold; position: relative; top: 40%; transform: translateY(40%);">Portfolio</div>
   </div>
   
-  <div class="parallax4">
   	<div class="rectangle" style="background-color: #7934bb; background-image: url('https://usercontent.irccloud-cdn.com/file/UOO9cM15/seamless-2030346_960_720.png')"></div>
-  </div>
+  	</div>
+  </div>    
+ </div>	  
 </body>
 </html>
