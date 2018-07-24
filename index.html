@@ -45,7 +45,7 @@
 		}
 
 		.nav > .nav-header {
-			display: inline;
+			display: none;
 
 		}
 
@@ -88,6 +88,11 @@
 				height: 0px;
 				padding: 0px;
 				position: fixed;
+                display: inline;
+			}
+            
+            .nav > .nav-header {
+				display: inline;
 			}
 
 			.nav > .nav-btn {
@@ -99,7 +104,7 @@
 
 			.nav > .nav-btn > label {
 				display: inline-block;
-				width: 20px;
+				width: 40px;
 				padding: 13px;
 			}
 
@@ -110,10 +115,12 @@
 
 			.nav > .nav-btn > label > span {
 				display: block;
-				width: 25px;
+				width: 30px;
 				float: right;
-				height: 10px;
-				border-top: 2px solid #eee;
+                padding: 2px;
+				height: 1px;
+				border: 2px solid #eee;
+                border-radius: 2px;
 			}
 
 			.nav > .nav-links {
@@ -195,6 +202,10 @@
 			bottom: 0;
 			margin: auto;
 		}
+        
+        img {
+        	height: 32px;
+        }
 	</style>
 </head>
 
@@ -207,9 +218,9 @@
   </div>
 
   <div class="nav">
-    <div class="nav-header">
+      <div class="nav-header">
       <div class="nav-title">
-        Logo
+        <a href="https://brise105.github.io/"><img src="https://usercontent.irccloud-cdn.com/file/YfvJmfvO/mynamme.png"></a>
       </div>
     </div>
     <div class="nav-btn">
