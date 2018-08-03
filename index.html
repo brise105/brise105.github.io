@@ -30,9 +30,21 @@
 			font-size: 7vw;
 		}
 
-		p {
+		h3 {
 			font-size: 4vw;
 		}
+        
+        p {
+        	color: #fff;
+        	font-family: Garamond;
+            word-break: normal;
+            padding: 2vh;
+            margin: 0;
+            font-size: 3vh;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
 		
 		.nav {
 			height: 50px;
@@ -90,6 +102,10 @@
 				position: fixed;
                 display: inline;
 			}
+            
+            p {
+            	font-size: 16px;
+            }
             
             .nav > .nav-header {
 				display: inline;
@@ -189,10 +205,23 @@
 			background-repeat: repeat;
 			background-size: auto;
 		}
+        
+        .txtbox {
+        	height: 30%;
+			width: 100%;
+            background-color: rgba(77, 77, 77, 0.8);
+			position: relative;
+            top: 33%;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+            
+        }
 		
 		.rectangle {
-			height: 90vh;
-			width: 90vw;
+			height: 80vh;
+			width: 80vw;
 			border-radius: 25px;
 			background-color: #ffffff;
 			position: relative;
@@ -203,9 +232,6 @@
 			margin: auto;
 		}
         
-        img {
-        	height: 32px;
-        }
 	</style>
 </head>
 
@@ -214,13 +240,13 @@
   <!----------------------HOME-SECTION------------------------>
   <div class="header">
     <h2 id="Home">Brandon Thunder Brise&#241;o</h2>
-    <p>Political Analyst & Software Engineer</p>
+    <h3>Political Analyst & Software Engineer</h3>
   </div>
 
   <div class="nav">
       <div class="nav-header">
       <div class="nav-title">
-        <a href="https://brise105.github.io/"><img src="https://usercontent.irccloud-cdn.com/file/YfvJmfvO/mynamme.png"></a>
+        <a href="https://brise105.github.io/"><img style="height: 32px;" src="https://usercontent.irccloud-cdn.com/file/YfvJmfvO/mynamme.png"></a>
       </div>
     </div>
     <div class="nav-btn">
@@ -239,7 +265,12 @@
     </div>
   </div>
   
-  <div class="parallax"></div>
+  <div class="parallax">
+  	  	<div class="txtbox">
+         <img style="height: 40vw; max-height: 90%; padding-top: 2vh; padding-right: 2vh; padding-bottom: 2vh; padding-left: 2vh; float: right; border-radius: 0%;" src="https://usercontent.irccloud-cdn.com/file/a3HOJj4V/IMG_2610.JPG">
+         <p>Brandon Briseno is a 21 year old political analyst and software engineer. Between 2014-2018, Brandon attended Chapman University and obtained his B.A. in Political Science with a minor in Computer Science.<br><br>Brandon is currently employeed at International Security Group, LLC as a devOps engineer and works closely with backend encryption, hardware modifications, and procedural programming.</p>
+        </div>
+  </div>
 
   <!----------------------SECTION1------------------------>
 
