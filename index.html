@@ -9,9 +9,9 @@
 		}
 
 		body {
-		  margin: 0;
-		  font-size: 28px;
-		  height: 100%;
+			margin: 0;
+			font-size: 28px;
+			height: 100%;
 		}
 
 		.header {
@@ -33,56 +33,56 @@
 		h3 {
 			font-size: 4vw;
 		}
-        h4 {
-          color: #000000;
-          font-family: "Garamond", Garamond, serif;
-          font-size: 42px;
-        }
-        h5 {
-          color: #000000;
-          font-family: "Garamond", Garamond, serif;
-          font-size: 20px;
-        }
+		h4 {
+			color: #000000;
+			font-family: "Garamond", Garamond, serif;
+			font-size: 42px;
+		}
+		h5 {
+			color: #000000;
+			font-family: "Garamond", Garamond, serif;
+			font-size: 20px;
+		}
+
+		strong {
+			color: #000000;
+			font-family: "Garamond", Garamond, serif;
+			font-size: 20px;
+		}
+
+		li {
+			color: #000000;
+			font-family: "Garamond", Garamond, serif;
+			font-size: 20px;
+		}
+
+		ul {
+			color: #000000;
+			font-family: "Garamond", Garamond, serif;
+			font-size: 20px;
+		}
         
-        strong {
-          color: #000000;
-          font-family: "Garamond", Garamond, serif;
-          font-size: 20px;
-        }
-        
-        li {
-          color: #000000;
-          font-family: "Garamond", Garamond, serif;
-          font-size: 20px;
-        }
-        
-        ul {
-          color: #000000;
-          font-family: "Garamond", Garamond, serif;
-          font-size: 20px;
-        }
-        
-        p {
-        	color: #fff;
-        	font-family: Garamond;
-            word-break: normal;
-            padding: 2vh;
-            margin: 0;
-            font-size: 18px;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        
-        p2 {
-        	color: #000;
-        	font-family: Garamond;
-            word-break: normal;
-            padding: 2vh;
-            margin: 0;
-            font-size: 18px;
-            position: relative;
-        }
+		p {
+			color: #fff;
+			font-family: Garamond;
+			word-break: normal;
+			padding: 2vh;
+			margin: 0;
+			font-size: 18px;
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		p2 {
+			color: #000;
+			font-family: Garamond;
+			word-break: normal;
+			padding: 2vh;
+			margin: 0;
+			font-size: 18px;
+			position: relative;
+		}
 		
 		.nav {
 			height: 50px;
@@ -138,15 +138,14 @@
 				height: 0px;
 				padding: 0px;
 				position: fixed;
-                display: inline;
+                		display: inline;
 			}
             
-            p {
-            	font-size: 16px;
-
-            }
+			p {
+				font-size: 16px;
+			}
             
-            .nav > .nav-header {
+			.nav > .nav-header {
 				display: inline;
 			}
 
@@ -172,10 +171,10 @@
 				display: block;
 				width: 30px;
 				float: right;
-                padding: 2px;
+				padding: 2px;
 				height: 1px;
 				border: 2px solid #eee;
-                border-radius: 2px;
+				border-radius: 2px;
 			}
 
 			.nav > .nav-links {
@@ -205,6 +204,16 @@
 			}
 		}
 
+		@media (max-width:800px) {       
+			p {
+				font-size: 16px;
+			}
+
+			.txtbox {
+				min-height: 224px;
+			}
+		}		
+		
 		.content {
 			padding: 16px;
 		}
@@ -226,7 +235,7 @@
 			background-position: center;
 			background-repeat: repeat;
 			background-size: auto;
-            -webkit-overflow-scrolling: touch;
+            		-webkit-overflow-scrolling: touch;
 		}
 		
 		.parallax3 {
@@ -236,7 +245,7 @@
 			background-position: center;
 			background-repeat: repeat;
 			background-size: auto;
-            -webkit-overflow-scrolling: touch;
+            		-webkit-overflow-scrolling: touch;
 		}
 		
 		.parallax4 {
@@ -246,22 +255,21 @@
 			background-position: center;
 			background-repeat: repeat;
 			background-size: auto;
-            -webkit-overflow-scrolling: touch;
+            		-webkit-overflow-scrolling: touch;
 		}
         
-        .txtbox {
-        	height: 40%;
-            min-height: 112px;
+		.txtbox {
+			height: 40%;
+			min-height: 112px;
 			width: 100%;
-            background-color: rgba(77, 77, 77, 0.8);
+			background-color: rgba(77, 77, 77, 0.8);
 			position: relative;
-            top: 33%;
+			top: 33%;
 			left: 0;
 			right: 0;
 			bottom: 0;
 			margin: auto;
-            
-        }
+		}
 		
 		.rectangle {
 			height: 75vh;
@@ -276,36 +284,35 @@
 			margin: auto;
 		}
         
-        .column {
-            float: left;
-            width: 50%;
-        }
+		.column {
+		    float: left;
+		    width: 50%;
+		}
 
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
+		.row:after {
+		    content: "";
+		    display: table;
+		    clear: both;
+		}
         
-      #grid {
-        width: 80%;
-        display: grid;
-        grid-gap: 10px;
-        grid-auto-flow: row;
-        justify-content: center;
-        grid-template-rows: repeat(auto-fill, 200px);
-        grid-template-columns: repeat(auto-fill, 200px);
-        grid-auto-columns: 200px;
-        grid-auto-rows: 200px;
-        margin-left: 10%;
-        padding-top: 10px;
-        padding-bottom: 10px;
-      }
+	      #grid {
+		width: 80%;
+		display: grid;
+		grid-gap: 10px;
+		grid-auto-flow: row;
+		justify-content: center;
+		grid-template-rows: repeat(auto-fill, 200px);
+		grid-template-columns: repeat(auto-fill, 200px);
+		grid-auto-columns: 200px;
+		grid-auto-rows: 200px;
+		margin-left: 10%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	      }
 
-      #grid>div {
-        background: #34babb;
-      }
-        
+	      #grid>div {
+		background: #34babb;
+	      }     
 	</style>
 </head>
 
