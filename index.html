@@ -132,16 +132,6 @@
 			display: none;
 		}
 
-		@media screen and (max-device-width:812px), screen and (max-width:812px) {       
-			p {
-				font-size: 16px !important;
-			}
-
-			.txtbox {
-				min-height: 224px !important;
-			}
-		}	
-
 		@media screen and (max-device-width:414px), screen and (max-width:414px) {
 			.header {
 				visibility: hidden;
@@ -215,6 +205,16 @@
             
             .txtbox {
 				min-height: 112px;
+			}
+		}	
+        
+        @media only screen and (orientation: landscape) {       
+			p {
+				font-size: 16px !important;
+			}
+
+			.txtbox {
+				min-height: 224px !important;
 			}
 		}	
 		
