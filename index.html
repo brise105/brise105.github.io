@@ -131,8 +131,18 @@
 		.nav > #nav-check {
 			display: none;
 		}
-		
-		@media screen and (max-device-width:414px) and (orientation:portrait), screen and (max-width:414px) {
+
+		@media screen and (max-device-width:812px), screen and (max-width:812px) {       
+			p {
+				font-size: 16px !important;
+			}
+
+			.txtbox {
+				min-height: 224px !important;
+			}
+		}	
+
+		@media screen and (max-device-width:812px), screen and (max-width:812px) {
 			.header {
 				visibility: hidden;
 				height: 0px;
@@ -206,17 +216,7 @@
             .txtbox {
 				min-height: 112px;
 			}
-		}
-
-		@media screen and (max-device-width:414px) and (orientation:landscape), screen and (max-width:414px) {       
-			p {
-				font-size: 16px !important;
-			}
-
-			.txtbox {
-				min-height: 224px !important;
-			}
-		}		
+		}	
 		
 		.content {
 			padding: 16px;
