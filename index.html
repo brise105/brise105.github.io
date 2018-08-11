@@ -85,7 +85,7 @@
 		}
 		
 		.nav {
-			height: 50px;
+			height: 54px;
 			width: 100%;
 			background-color: #4d4d4d;
 			position: relative;
@@ -164,7 +164,7 @@
 
 			.nav > .nav-btn > label:hover {
 				background-color: rgba(0, 0, 0, 0.3);
-				height: 24px;
+				height: 28px;
 			}
 
 			.nav > .nav-btn > label > span {
@@ -254,7 +254,7 @@
 			width: 100%;
 			background-color: rgba(77, 77, 77, 0.8);
 			position: relative;
-			top: 33%;
+			top: 24%;
 			left: 0;
 			right: 0;
 			bottom: 0;
@@ -286,24 +286,61 @@
 		    clear: both;
 		}
         
-	      #grid {
-		width: 80%;
-		display: grid;
-		grid-gap: 10px;
-		grid-auto-flow: row;
-		justify-content: center;
-		grid-template-rows: repeat(auto-fill, 200px);
-		grid-template-columns: repeat(auto-fill, 200px);
-		grid-auto-columns: 200px;
-		grid-auto-rows: 200px;
-		margin-left: 10%;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	      }
+	    #grid {
+          width: 80%;
+          display: grid;
+          grid-gap: 10px;
+          grid-auto-flow: row;
+          justify-content: center;
+          grid-template-rows: repeat(auto-fill, 200px);
+          grid-template-columns: repeat(auto-fill, 200px);
+          grid-auto-columns: 200px;
+          grid-auto-rows: 200px;
+          margin-left: 10%;
+          padding-top: 10px;
+          padding-bottom: 10px;
+	    }
 
-	      #grid>div {
-		background: #34babb;
-	      }     
+	    #grid>div {
+          background: #34babb;
+          text-align: center;
+          position: relative;
+	    } 
+        
+        #grid> div span{
+          position:absolute;
+          left: 0;
+          right: 0;
+          bottom:0;
+        }
+          
+       #grid2 {
+          width: 80%;
+          display: grid;
+          grid-gap: 10px;
+          grid-auto-flow: row;
+          justify-content: center;
+          grid-template-rows: repeat(auto-fill, 200px);
+          grid-template-columns: repeat(auto-fill, 200px);
+          grid-auto-columns: 200px;
+          grid-auto-rows: 200px;
+          margin-left: 10%;
+          padding-top: 10px;
+          padding-bottom: 10px;
+	    }
+
+        #grid2>div {
+          background: #7934bb;
+          text-align: center;
+          position: relative;
+        } 
+
+        #grid2> div span{
+          position:absolute;
+          left: 0;
+          right: 0;
+          bottom:0;
+        }
 	</style>
 </head>
 
@@ -385,15 +422,12 @@
     <div id="Github" style="background-color: rgba(52, 186, 187, 0.1); border: 15px double #34babb; border-radius: 0.1em; text-align: center; font-size: 10vw; font-family: Megrim; font-color: #000000; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white, -2px 0 4px black, 0 2px 4px black, 2px 0 4px  black, 0 -2px 4px black; font-weight: bold; position: relative;">Github</div>
   	<div class="rectangle" style="overflow-x: hidden; overflow-y: scroll; background-color: #34babb; background-image: url('https://usercontent.irccloud-cdn.com/file/ahPqNvR1/computer-3163436_960_720.png')">
     <div id="grid">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
-      <div>6</div>
-      <div>7</div>
-      <div>8</div>
-      <div>9</div>
+      <div><span>Generic Data Structures</span></div>
+      <div><span>128-bit AES Cipher</span></div>
+      <div><span>Game of Life</span></div>
+      <div><span>IRC Automation & Chat Client</span></div>
+      <div><span>UDP Chat Client+Server</span></div>
+      <div><span>Asterisk PBX Configurations</span></div>
     </div>
     </div>
   </div>
@@ -401,7 +435,19 @@
   <!----------------------SECTION3------------------------> 
   <div class="parallax4">
     <div id="Portfolio" style="background-color: rgba(121, 52, 187, 0.1); border: 15px double #7934bb; border-radius: 0.1em; text-align: center; font-size: 10vw; font-family: Megrim; font-color: #000000; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white, -2px 0 4px black, 0 2px 4px black, 2px 0 4px  black, 0 -2px 4px black; font-weight: bold; position: relative;">Portfolio</div>
-  	<div class="rectangle" style="background-color: #7934bb; background-image: url('https://usercontent.irccloud-cdn.com/file/UOO9cM15/seamless-2030346_960_720.png')"></div>
+  	<div class="rectangle" style="overflow-x: hidden; overflow-y: scroll; background-color: #7934bb; background-image: url('https://usercontent.irccloud-cdn.com/file/UOO9cM15/seamless-2030346_960_720.png')">
+      <div id="grid2">
+        <div><span>1</span></div>
+        <div><span>2</span></div>
+        <div><span>3</span></div>
+        <div><span>4</span></div>
+        <div><span>5</span></div>
+        <div><span>6</span></div>
+        <div><span>7</span></div>
+        <div><span>8</span></div>
+        <div><span>9</span></div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
