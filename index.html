@@ -256,7 +256,7 @@
 		}
         
 		.txtbox {
-			height: 75vh;
+			height: 600px;
 			width: 100%;
 			background-color: rgba(77, 77, 77, 0.8);
 			position: relative;
@@ -336,7 +336,6 @@
 	    }
 
         #grid2>div {
-          background: #7934bb;
           text-align: center;
           position: relative;
         } 
@@ -357,6 +356,41 @@
         .RC-indent{
 		  text-indent: 4%;
 		}
+        
+         #grid3 {
+            display: grid;
+            justify-content: center;
+            grid-template-rows: repeat(auto-fill, 600px);
+            grid-template-columns: repeat(auto-fill, 49%);
+            grid-auto-columns: auto;
+            grid-auto-rows: auto;
+            margin-left: 0%;
+            margin-right: 0%;
+            padding-top: 25%;
+            padding-bottom: 25%;
+
+
+        }
+
+        #grid3 > div {        
+            text-align: Left;
+            color: #fff;
+			font-family: Garamond;
+            font-size:  24px;
+            vertical-align: middle;
+                        justify-content: center;
+            align-items: center;
+                        position: relative;
+            display: flex;
+            word-wrap: break-word;
+                        background-color: rgba(77, 77, 77, 0.8);
+        }
+
+        #grid3 > div span {
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
 	</style>
 </head>
 
@@ -391,9 +425,16 @@
   </div>
   
   <div class="parallax">
-  	  	<div class="txtbox">
-         <img style="position: relative; height: 40vw; max-height: 90%; padding-top: 2vh; padding-right: 2vh; padding-bottom: 2vh; padding-left: 2vh; float: right; border-radius: 0%;" src="https://usercontent.irccloud-cdn.com/file/a3HOJj4V/IMG_2610.JPG">
-         <p>Brandon Briseno is a 21 year old political analyst and software engineer. Between 2014-2018, Brandon attended Chapman University and obtained his B.A. in Political Science and Minor in Computer Science.<br><br>Brandon is currently employeed at International Security Group, LLC as a Communications Security Technician and works closely with backend encryption, hardware modifications, and procedural programming.</p>
+
+            <div id="grid3">
+        <div style="padding-left: 10%">
+         Brandon Briseno is a 21 year old political analyst and software engineer. Between 2014-2018, Brandon attended Chapman University and obtained his B.A. in Political Science and Minor in Computer Science.<br><br>Brandon is currently employeed at International Security Group, LLC as a Communications Security Technician and works closely with backend encryption, hardware modifications, and procedural programming.
+        </div>
+        <div>
+         <img style="height: 40vw; width: 40vw; max-height: 400px; max-width: 400px" src="https://usercontent.irccloud-cdn.com/file/a3HOJj4V/IMG_2610.JPG">
+        </div>
+    </div>
+        
         </div>
   </div>
 
@@ -438,19 +479,25 @@
     <h5 style="margin-left: 2%; margin-top: 0%; word-wrap: break-word; text-indent: 4%;">Employed part-time and interned 80+ hours at a communications security agency. Sold encryption software for mobile devices, established secure VoIP services over private branch exchanges on landlines/cellular devices, performed hardware modifications, wrote procedural C code, and analyzed SIP packets in wireshark. Fixed broken mobile devices, shattered screens and faulty hardware. Set up secure communications for commercial use. Implemented several networking and encryption protocols. Explained basic mobile hardware/architecture to customers. Reduced general risk for security breaches, created user authentication/authorization, encrypted/decrypted (virtual) private networks, and established secure local area networks. Worked with physical components (network & power), mobile application layers, mobile networking support/infrastructure, and communication protocols. Fiddled with symmetric-key encryption algorithms (AES-256) and built a cipher from scratch. Researched applicable aspects of quantum computing towards cryptography and potential commercial uses with QuTiP in creating numerical simulations of open quantum systems.</h5>
     <div class="row">
         <div class="column">
-            <h5 style="margin-left: 4%; word-wrap: break-word;">Freelance Web Developer:<br><i>2Reinas</i><li>Kasey Cosley</li><li>(904) 460-5940</li></h5>
+            <h5 style="margin-left: 4%; word-wrap: break-word;">Freelance Web Developer:<br><i>2Reinas.com</i><li>Kasey Cosley</li><li>(904) 460-5940</li></h5>
         </div>
         <div class="column">
             <h5 style="text-align: right; margin-right: 4%; word-wrap: break-word;">2016-2018</h5>
         </div>
     </div>
-    <h5 style="margin-left: 2%; margin-top: 0%; word-wrap: break-word; text-indent: 4%;">High performance small business website for photographic content and contact information. Coded entirely from scratch, built on .NET Framework in Visual Studios using a MVC with a mix of HTML5/CSS, Javascript, and C#. SE optimized via DA/PA analysis, local/optimized image hosting, image ids, meta tags/headlines, and keywords. Created custom logos, graphics, and CSS stylesheet.</h5>
+    <h5 style="margin-left: 2%; margin-top: 0%; word-wrap: break-word; text-indent: 4%;">High-performance small business website for mostly photographic content and text. Written entirely in HTML/CSS. Completely scalable for mobile friendly browsing, fluid parallax scrolling for improved UX and engagement. Managed deployment, domain name, and trademarking. Made custom logo, background patterns, and stylized graphics in Adobe Photoshop/Illustrator.</h5>
     <div class="row">
         <div class="column">
-            <h5 style="margin-left: 4%; margin-top: 0%; word-wrap: break-word;"><i>Travel With Savannah</i><li>Savannah Castanzo</li><li>(575) 770-1127</li></h5>
+            <h5 style="margin-left: 4%; margin-top: 0%; word-wrap: break-word;"><i>DiosaDelights.com</i><li>Savannah Castanzo</li><li>(575) 770-1127</li></h5>
         </div>
     </div>
-    <h5 style="margin-left: 2%; margin-top: 0%; word-wrap: break-word; text-indent: 4%;">Business and travel oriented website for international clients. Extremely low-cost project, composed entirely of minimalist HTML/CSS. Built from scratch using original artwork and content.</h5>
+    <h5 style="margin-left: 2%; margin-top: 0%; word-wrap: break-word; text-indent: 4%;">Promotional business website for live events. Custom domain, low cost, static deployment. Built from scratch using original artwork, content, and pictures. MVC built on .NET Framework in Visual Studios a mix of HTML/CSS, Javascript, and C#. Performed SEO via DA/PA analysis, local/optimized image hosting, navigation, image ids, meta tags/headlines, and keywords. Created custom logos, graphics, and CSS stylesheet. Established back end database for employees receiving forms, along with a front side for end users requesting pricing and availability. </h5>
+        <div class="row">
+        <div class="column">
+            <h5 style="margin-left: 4%; margin-top: 0%; word-wrap: break-word;"><i>changecriminaljustice.org.com</i>
+        </div>
+    </div>
+    <h5 style="margin-left: 2%; margin-top: 0%; word-wrap: break-word; text-indent: 4%;">Educational website created to build civic engagement and public awareness around the American criminal justice system. Built in Wordpress, but converted to HTML/CSS. Then ported over to an MVC in Visual Studios for backend purposes. Maintained the mySQL database to log legislative statutes (name, dates, content, etc) going through the U.S. House of Representatives and Senate. Website included custom user logins, authorization, and authentication. Javascript used to create a more dynamic UX and keep users engaged in learning about nonviolent prison reform. </h5>
     <div class="line"></div>
     <h5 style="margin-left: 2%; word-wrap: break-word;"><br>ACTIVITIES<br><br>
     	<li> Second Harvest Food Bank Volunteer</li>
