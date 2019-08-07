@@ -1,272 +1,256 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet'>
-	<style>
-		html {
-			height: 120%;
-            
-		}
-
-		body {
-			margin: 0px;
-			font-size: 28px;
-			height: 100%;
-		}
-
-		.header {
-			background-color: #f1f1f1;
-			background-image: url("https://usercontent.irccloud-cdn.com/file/9eCxlJVE/red-607751_960_720.png");
-			background-size: auto;
-			padding: 30px;
-			text-align: center;
-			font-family: Megrim;
-			color: #000000;
-			text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white, -2px 0 2px black, 0 2px 2px black, 2px 0 2px  black, 0 -2px 2px black;
-			font-weight: bold;
-		}
-        
-		h2 {
-			font-size: 7vw;
-		}
-
-		h3 {
-			font-size: 4vw;
-		}
-		h4 {
-			color: #000000;
-			font-family: "Garamond", Garamond, serif;
-			font-size: 42px;
-		}
-		h5 {
-			color: #000000;
-			font-family: "Garamond", Garamond, serif;
-			font-size: 20px;
-		}
-
-		strong {
-			color: #000000;
-			font-family: "Garamond", Garamond, serif;
-			font-size: 20px;
-		}
-
-		li {
-			color: #000000;
-			font-family: "Garamond", Garamond, serif;
-			font-size: 20px;
-            margin-left: 8%;
-		}
-
-		ul {
-			color: #000000;
-			font-family: "Garamond", Garamond, serif;
-			font-size: 20px;
-		}
-        
-		p {
-			color: #fff;
-			font-family: "Garamond", Garamond, serif;
-			word-break: normal;
-			padding: 2vh;
-			font-size: 20px;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-            margin: auto 0
-            
-		}
-
-		p2 {
-			color: #000;
-			font-family: Garamond;
-			word-break: normal;
-			padding: 2vh;
-			margin: 0;
-			font-size: 18px;
-			position: relative;
-		}
-		
-		.nav {
-			height: 58px;
-			width: 100%;
-			background-color: #4d4d4d;
-			position: relative;
-			text-align:center;
-			font-family: "Garamond", Garamond, serif;
-			text-shadow: -1px 0 2px black, 0 1px 2px black, 1px 0 2px  black, 0 -1px 2px black;
-		}
-
-		.nav > .nav-header {
-			display: none;
-
-		}
-
-		.nav > .nav-header > .nav-title {
-			display: inline-block;
-			font-size: 22px;
-			color: #fff;
-			padding: 13px 0px 0px 20px;
-
-		}
-
-		.nav > .nav-btn {
-			display: none;
-		}
-
-		.nav > .nav-links {
-			display: inline;
-			font-size: 20px;
-            
-		}
-
-		.nav > .nav-links > a {
-			display: inline-block;
-			padding: 17px 17px 17px 17px;
-			text-decoration: none;
-			color: #efefef;
-		}
-
-		.nav > .nav-links > a:hover {
-			background-color: rgba(0, 0, 0, 0.3);
-			height: 24px;
-		}
-
-		.nav > #nav-check {
-			display: none;
-		}
-
-		@media (max-width:414px) {
-			.header {
-				visibility: hidden;
-				height: 0px;
-				padding: 0px;
-				position: fixed;
-                		display: inline;
-			}
-            
-            
-			.nav > .nav-header {
-				display: inline;
-			}
-
-			.nav > .nav-btn {
-				display: inline-block;
-				position: absolute;
-				right: 0px;
-				top: 0px;
-			}
-
-			.nav > .nav-btn > label {
-				display: inline-block;
-				width: 40px;
-				padding: 13px;
-			}
-
-			.nav > .nav-btn > label:hover {
-				background-color: rgba(0, 0, 0, 0.3);
-				height: 28px;
-			}
-
-			.nav > .nav-btn > label > span {
-				display: block;
-				width: 30px;
-				float: right;
-				padding: 2px;
-				height: 1px;
-				border: 2px solid #eee;
-				border-radius: 2px;
-			}
-
-			.nav > .nav-links {
-				position: absolute;
-				display: block;
-				width: 100%;
-				background-color: #333;
-				height: 0px;
-				transition: all 0.3s ease-in;
-				overflow-y: hidden;
-				top: 50px;
-				left: 0px;
-			}
-
-			.nav > .nav-links > a {
-				display: block;
-				left: 50%;
-			}
-
-			.nav > #nav-check:not(:checked) + .nav-links {
-				height: 0px;
-			}
-
-			.nav > #nav-check:checked + .nav-links {
-				height: 165px;
-				overflow: hidden;
-			}
-            
-		}		
-		
-		.content {
-			padding: 16px;
-		}
-		
-		.parallax {
-			background-image: url('https://usercontent.irccloud-cdn.com/file/9eCxlJVE/red-607751_960_720.png');
-			height: 120%; 
-			background-attachment: fixed;
-			background-position: center;
-			background-repeat: repeat;
-			background-size: auto;
-			-webkit-overflow-scrolling: touch;
-		}
-
-		.parallax2 {
-			background-image: url('https://usercontent.irccloud-cdn.com/file/FWdNrE22/orange-607751_960_720.png');
-			height: 120%; 
-			background-attachment: fixed;
-			background-position: center;
-			background-repeat: repeat;
-			background-size: auto;
-            		-webkit-overflow-scrolling: touch;
-		}
-		
-		.parallax3 {
-			background-image: url('https://usercontent.irccloud-cdn.com/file/cY1XnqcU/blue-607751_960_720.png');
-			height: 120%; 
-			background-attachment: fixed;
-			background-position: center;
-			background-repeat: repeat;
-			background-size: auto;
-            		-webkit-overflow-scrolling: touch;
-		}
-		
-		.parallax4 {
-			background-image: url('https://usercontent.irccloud-cdn.com/file/yi6zwyOg/purple-607751_960_720.png');
-			height: 120%; 
-			background-attachment: fixed;
-			background-position: center;
-			background-repeat: repeat;
-			background-size: auto;
-            		-webkit-overflow-scrolling: touch;
-		}
-        
-		.txtbox {
-			width: 100%;
-			background-color: rgba(77, 77, 77, 0.8);
-			position: relative;
-			top: 24%;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			margin: auto;
-            display: grid;
-            grid-template-columns: 3fr 4fr;
-            grid-auto-rows: minmax(360px, auto);
-            max-height: 80%;
-            
-		}
-        
-        .txtbox img {
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet'>
+    <style>
+      html {
+      }
+      body {
+        margin: auto;
+        font-size: 28px;
+      }
+      .header {
+        background-color: #f1f1f1;
+        background-image: url("https://usercontent.irccloud-cdn.com/file/9eCxlJVE/red-607751_960_720.png");
+        background-size: auto;
+        padding: 30px;
+        text-align: center;
+        font-family: Megrim;
+        color: #000000;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white, -2px 0 2px black, 0 2px 2px black, 2px 0 2px  black, 0 -2px 2px black;
+        font-weight: bold;
+      }
+      h2 {
+        font-size: 7vw;
+      }
+      h3 {
+        font-size: 4vw;
+      }
+      h4 {
+        color: #000000;
+        font-family: "Garamond", Garamond, serif;
+        font-size: 42px;
+      }
+      h5 {
+        color: #000000;
+        font-family: "Garamond", Garamond, serif;
+        font-size: 20px;
+      }
+      strong {
+        color: #000000;
+        font-family: "Garamond", Garamond, serif;
+        font-size: 20px;
+      }
+      li {
+        color: #000000;
+        font-family: "Garamond", Garamond, serif;
+        font-size: 20px;
+        margin-left: 8%;
+      }
+      ul {
+        color: #000000;
+        font-family: "Garamond", Garamond, serif;
+        font-size: 20px;
+      }
+      p {
+        color: #fff;
+        font-family: "Garamond", Garamond, serif;
+        word-break: normal;
+        padding: 2vh;
+        font-size: 20px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: auto 0
+      }
+      p2 {
+        color: #000;
+        font-family: Garamond;
+        word-break: normal;
+        padding: 2vh;
+        margin: 0;
+        font-size: 18px;
+        position: relative;
+      }
+      .nav {
+        height: 58px;
+        width: 100%;
+        background-color: #4d4d4d;
+        position: relative;
+        text-align:center;
+        font-family: "Garamond", Garamond, serif;
+        text-shadow: -1px 0 2px black, 0 1px 2px black, 1px 0 2px  black, 0 -1px 2px black;
+      }
+      .nav > .nav-header {
+        display: none;
+      }
+      .nav > .nav-header > .nav-title {
+        display: inline-block;
+        font-size: 22px;
+        color: #fff;
+        padding: 13px 0px 0px 20px;
+      }
+      .nav > .nav-btn {
+        display: none;
+      }
+      .nav > .nav-links {
+        display: inline;
+        font-size: 20px;
+      }
+      .nav > .nav-links > a {
+        display: inline-block;
+        padding: 17px 17px 17px 17px;
+        text-decoration: none;
+        color: #efefef;
+      }
+      .nav > .nav-links > a:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 24px;
+      }
+      .nav > #nav-check {
+        display: none;
+      }
+      @media (max-width:414px) {
+        .header {
+          visibility: hidden;
+          height: 0px;
+          padding: 0px;
+          position: fixed;
+          display: inline;
+        }
+        .nav > .nav-header {
+          display: inline;
+        }
+        .nav > .nav-btn {
+          display: inline-block;
+          position: absolute;
+          right: 0px;
+          top: 0px;
+        }
+        .nav > .nav-btn > label {
+          display: inline-block;
+          width: 40px;
+          padding: 13px;
+        }
+        .nav > .nav-btn > label:hover {
+          background-color: rgba(0, 0, 0, 0.3);
+          height: 28px;
+        }
+        .nav > .nav-btn > label > span {
+          display: block;
+          width: 30px;
+          float: right;
+          padding: 2px;
+          height: 1px;
+          border: 2px solid #eee;
+          border-radius: 2px;
+        }
+        .nav > .nav-links {
+          position: absolute;
+          display: block;
+          width: 100%;
+          background-color: #333;
+          height: 0px;
+          transition: all 0.3s ease-in;
+          overflow-y: hidden;
+          top: 50px;
+          left: 0px;
+        }
+        .nav > .nav-links > a {
+          display: block;
+          left: 50%;
+        }
+        .nav > #nav-check:not(:checked) + .nav-links {
+          height: 0px;
+        }
+        .nav > #nav-check:checked + .nav-links {
+          height: 165px;
+          overflow: hidden;
+        }
+      }		
+      .content {
+        padding: 16px;
+      }
+      .parallax {
+        background-image: url('https://usercontent.irccloud-cdn.com/file/9eCxlJVE/red-607751_960_720.png');
+        height: 120vh; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: repeat;
+        background-size: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      .parallax-break-a {
+        background-image: url('https://usercontent.irccloud-cdn.com/file/FWdNrE22/orange-607751_960_720.png');
+        height: auto; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: repeat;
+        background-size: auto;
+        -webkit-overflow-scrolling: touch;
+      }        
+      .parallax2 {
+        background-image: url('https://usercontent.irccloud-cdn.com/file/FWdNrE22/orange-607751_960_720.png');
+        height: 120vh; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: repeat;
+        background-size: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      .parallax-break-b {
+        background-image: url('https://usercontent.irccloud-cdn.com/file/cY1XnqcU/blue-607751_960_720.png');
+        height: auto; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: repeat;
+        background-size: auto;
+        -webkit-overflow-scrolling: touch;
+      }  
+      .parallax3 {
+        background-image: url('https://usercontent.irccloud-cdn.com/file/cY1XnqcU/blue-607751_960_720.png');
+        height: 120vh; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: repeat;
+        background-size: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      .parallax-break-c {
+        background-image: url('https://usercontent.irccloud-cdn.com/file/yi6zwyOg/purple-607751_960_720.png');
+        height: auto; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: repeat;
+        background-size: auto;
+        -webkit-overflow-scrolling: touch;
+      }         
+      .parallax4 {
+        background-image: url('https://usercontent.irccloud-cdn.com/file/yi6zwyOg/purple-607751_960_720.png');
+        height: 120vh; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: repeat;
+        background-size: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      .txtbox {
+        width: 100%;
+        background-color: rgba(77, 77, 77, 0.8);
+        position: relative;
+        top: 24%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 3fr 4fr;
+        grid-auto-rows: minmax(360px, auto);
+        max-height: 75vh;
+        overflow-y: scroll;  
+      }     
+      .txtbox img {
         position: relative;
         top: 50%;
         transform: translateY(-50%);
@@ -277,231 +261,274 @@
         padding-bottom: 2vh; 
         padding-left: 2vh;
         float: center;
-        border-radius: 0%;     
-        }
-		
-		.rectangle {
-			height: 75vh;
-			width: 80vw;
-			border-radius: 25px;
-			background-color: #ffffff;
-			position: relative;
-			top: 100px;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			margin: auto;
-		}
-        
-		.column {
-		    float: left;
-		    width: 50%;
-		}
-
-		.row:after {
-		    content: "";
-		    display: table;
-		    clear: both;
-		}
-        
-	    #grid {
-          width: 80%;
-          display: grid;
-          grid-gap: 10px;
-          grid-auto-flow: row;
-          justify-content: center;
-          grid-template-rows: repeat(auto-fill, 200px);
-          grid-template-columns: repeat(auto-fill, 200px);
-          grid-auto-columns: 200px;
-          grid-auto-rows: 200px;
-          margin-left: 10%;
-          padding-top: 10px;
-          padding-bottom: 10px;
-	    }
-
-	    #grid>div {
-          background: #34babb;
-          text-align: center;
-          position: relative;
-	    } 
-        
-        #grid> div span{
-          position:absolute;
-          left: 0;
-          right: 0;
-          bottom:0;
-        }
-          
-       #grid2 {
-          width: 80%;
-          display: grid;
-          grid-gap: 10px;
-          grid-auto-flow: row;
-          justify-content: center;
-          grid-template-rows: repeat(auto-fill, 200px);
-          grid-template-columns: repeat(auto-fill, 200px);
-          grid-auto-columns: 200px;
-          grid-auto-rows: 200px;
-          margin-left: 10%;
-          padding-top: 10px;
-          padding-bottom: 10px;
-	    }
-
-        #grid2>div {
-          background: #7934bb;
-          text-align: center;
-          position: relative;
-        } 
-
-        #grid2> div span{
-          position:absolute;
-          left: 0;
-          right: 0;
-          bottom:0;
-        }
-        
-        .line{
-		  width: 100%;
-		  border-bottom: 1px solid black;
-	      position: absolute;
-		}
-        
-        .RC-indent{
-		  text-indent: 4%;
-		}
-	</style>
-</head>
-
-<body>
-
-  <!----------------------HOME-SECTION------------------------>
-  <div class="header">
-    <h2 id="Home">Brandon Thunder Brise&#241;o</h2>
-    <h3>Political Analyst & Software Engineer</h3>
-  </div>
-
-  <div class="nav">
+        border-radius: 0%;
+      }
+      .para-header {
+        position: relative;
+        border-radius: 0.1em;
+      }
+      .para-header p {
+        text-align: center;
+        font-size: 10vw;
+        font-family: Megrim;
+        font-color: #000000;
+        color: #000;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white, -2px 0 4px black, 0 2px 4px black, 2px 0 4px  black, 0 -2px 4px black;
+        font-weight: bold;
+        position: relative;
+        top: 0%;
+        transform: translateY(0);
+      }
+      .rectangle {
+        height: 75vh;
+        max-height: 75vh;
+        width: 80vw;
+        border-radius: 25px;
+        background-color: #ffffff;
+        position: relative;
+        top: 10%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      .column {
+        float: left;
+        width: 50%;
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      #grid {
+        width: 80%;
+        display: grid;
+        grid-gap: 10px;
+        grid-auto-flow: row;
+        justify-content: center;
+        grid-template-rows: repeat(auto-fill, 200px);
+        grid-template-columns: repeat(auto-fill, 200px);
+        grid-auto-columns: 200px;
+        grid-auto-rows: 200px;
+        margin-left: 10%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      #grid>div {
+        background: #34babb;
+        text-align: center;
+        position: relative;
+      } 
+      #grid> div span{
+        position:absolute;
+        left: 0;
+        right: 0;
+        bottom:0;
+      }
+      #grid2 {
+        width: 80%;
+        display: grid;
+        grid-gap: 10px;
+        grid-auto-flow: row;
+        justify-content: center;
+        grid-template-rows: repeat(auto-fill, 200px);
+        grid-template-columns: repeat(auto-fill, 200px);
+        grid-auto-columns: 200px;
+        grid-auto-rows: 200px;
+        margin-left: 10%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      #grid2>div {
+        background: #7934bb;
+        text-align: center;
+        position: relative;
+      } 
+      #grid2> div span{
+        position:absolute;
+        left: 0;
+        right: 0;
+        bottom:0;
+      }
+      .line{
+        width: 100%;
+        border-bottom: 1px solid black;
+        position: absolute;
+      }
+      .RC-indent{
+        text-indent: 4%;
+      }
+      ::-webkit-scrollbar {display: none;}
+    </style>
+  </head>
+  
+  <body>
+    <!----------------------HOME-SECTION------------------------>
+    <div class="header">
+      <h2 id="Home">Brandon Thunder Brise&#241;o</h2>
+      <h3>Political Analyst & Software Engineer</h3>
+    </div>
+    <div class="nav">
       <div class="nav-header">
-      <div class="nav-title">
-        <a href="https://brise105.github.io/"><img style="height: 32px;" src="https://usercontent.irccloud-cdn.com/file/YfvJmfvO/mynamme.png"></a>
+        <div class="nav-title">
+          <a href="https://brise105.github.io/"><img style="height: 32px;" src="https://usercontent.irccloud-cdn.com/file/YfvJmfvO/mynamme.png"></a>
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+        </label>
+      </div>
+      <input type="checkbox" id="nav-check">
+      <div class="nav-links">
+        <a href="https://brise105.github.io/#Resume">Resume</a>
+        <a href="https://brise105.github.io/#Github">Github</a>
+        <a href="https://brise105.github.io/#Portfolio">Portfolio</a>
       </div>
     </div>
-    <div class="nav-btn">
-      <label for="nav-check">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
+    <div class="parallax">
+      <div class="txtbox">
+        <div> <img src="https://usercontent.irccloud-cdn.com/file/a3HOJj4V/IMG_2610.JPG"></div>
+        <div>
+          <p>Brandon Briseno is a 21 year old political analyst and software engineer. Between 2014-2018, Brandon attended Chapman University and obtained his B.A. in Political Science and Minor in Computer Science.<br><br>Brandon is currently employeed at International Security Group, LLC as a Communications Security Technician and works closely with backend encryption, hardware modifications, and procedural programming.</p>
+        </div>
+      </div>
     </div>
-    <input type="checkbox" id="nav-check">
-    <div class="nav-links">
     
-      <a href="https://brise105.github.io/#Resume">Resume</a>
-      <a href="https://brise105.github.io/#Github">Github</a>
-      <a href="https://brise105.github.io/#Portfolio">Portfolio</a>
+    <!----------------------BREAKER------------------------>
+    <div class="parallax-break-a">
+      <div id="Resume" class= "para-header" style="background-color: rgba(187, 104, 52, 0.1); border: 15px double #bb6834;">
+        <p>Resume</p>
+      </div>
     </div>
-  </div>
-  
-  <div class="parallax">
-  	  	<div class="txtbox">
-                 <div> <img src="https://usercontent.irccloud-cdn.com/file/a3HOJj4V/IMG_2610.JPG"></div>
-         <div><p>Brandon Briseno is a 21 year old political analyst and software engineer. Between 2014-2018, Brandon attended Chapman University and obtained his B.A. in Political Science and Minor in Computer Science.<br><br>Brandon is currently employeed at International Security Group, LLC as a Communications Security Technician and works closely with backend encryption, hardware modifications, and procedural programming.</p></div>
-        </div>
-  </div>
-
-  <!----------------------SECTION1------------------------>
-
-  <div class="parallax2">
-      <div id="Resume" style="background-color: rgba(187, 104, 52, 0.1); border: 15px double #bb6834; border-radius: 0.1em; text-align: center; font-size: 10vw; font-family: Megrim; font-color: #000000; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white, -2px 0 4px black, 0 2px 4px black, 2px 0 4px  black, 0 -2px 4px black; font-weight: bold; position: relative;">Resume</div>
-  	<div class="rectangle" style="background-color: #bb6834; background-image: url('https://usercontent.irccloud-cdn.com/file/XrultFnN/geometric-patterns-1978688_960_720.png'); overflow-x: hidden; overflow-y: scroll;">
-	<h4 align="center">
-        Brandon Briseño
-    </h4>
-    <div class="row">
-        <div class="column">
-            <h5 style="margin-left: 4%; word-wrap: break-word;">1 University Dr,<br><br>Orange, CA, 92866</h5>
-        </div>
-        <div class="column">
-            <h5 style="text-align: right; margin-right: 4%; word-wrap: break-word;">1 (575) 779-1263<br><br>bbriseno877@gmail.com</h5>
-        </div>
-    </div>
-    <div class="line"></div>
-    <h5 style="margin-left: 2%; word-wrap: break-word; ">OBJECTIVES</h5>
-    <h5 style="margin-left: 2%; word-wrap: break-word;  text-indent: 4%;">Approach global issues via statistical analysis and computer science-oriented models. Expand knowledge of high-performance computing, distributed systems, parallel programming, and quantum computing.</h5>
-    <div class="line"></div>
-    <div class="row">
-        <div class="column">
-            <h5 style="margin-left: 4%; word-wrap: break-word;">EDUCATION<br><br>Chapman University<br><li>B.A. in Political Science</li><li>Minor in Computer Science</li></h5>
-        </div>
-        <div class="column">
-            <h5 style="text-align: right; margin-right: 4%; word-wrap: break-word;"><br><br>2014-2018</h5>
-        </div>
-    </div>
-    <h5 style="margin-left: 2%; word-wrap: break-word;">RELAVANT COURSEWORK<br><br><div class="RC-indent">Computer Networking, Data Structures & Algorithms, Digital Logic, Business Law, & Separation of Powers and Public Policy</div></h5>
-    <div class="line"></div>
-    <div class="row">
-        <div class="column">
-            <h5 style="margin-left: 4%; word-wrap: break-word;">EXPERIENCE<br><br>Communications Security Technician & Internship:<br><i>International Security Group, LLC</i><li>Richard DiSabatino</li><li>(818) 451-7684</li></h5>
-        </div>
-        <div class="column">
-            <h5 style="text-align: right; margin-right: 4%; word-wrap: break-word;"><br><br>2018-2019</h5>
-        </div>
-    </div>
-    <h5 style="margin-left: 2%; margin-top: 0%; word-wrap: break-word; text-indent: 4%;">Employed part-time and interned 80+ hours at a communications security agency. Sold encryption software for mobile devices, established secure VoIP services over private branch exchanges on landlines/cellular devices, performed hardware modifications, wrote procedural C code, and analyzed SIP packets in wireshark. Fixed broken mobile devices, shattered screens and faulty hardware. Set up secure communications for commercial use. Implemented several networking and encryption protocols. Explained basic mobile hardware/architecture to customers. Reduced general risk for security breaches, created user authentication/authorization, encrypted/decrypted (virtual) private networks, and established secure local area networks. Worked with physical components (network & power), mobile application layers, mobile networking support/infrastructure, and communication protocols. Fiddled with symmetric-key encryption algorithms (AES-256) and built a cipher from scratch. Researched applicable aspects of quantum computing towards cryptography and potential commercial uses with QuTiP in creating numerical simulations of open quantum systems.</h5>
-    <div class="row">
-        <div class="column">
-            <h5 style="margin-left: 4%; word-wrap: break-word;">Freelance Web Developer:<br><i>2Reinas.com</i><li>Kasey Cosley</li><li>(904) 460-5940</li></h5>
-        </div>
-        <div class="column">
-            <h5 style="text-align: right; margin-right: 4%; word-wrap: break-word;">2016-2018</h5>
-        </div>
-    </div>
-    <h5 style="margin-left: 2%; margin-top: 0%; word-wrap: break-word; text-indent: 4%;">High-performance small business website for mostly photographic content and text. Written entirely in HTML/CSS. Completely scalable for mobile friendly browsing, fluid parallax scrolling for improved UX and engagement. Managed deployment, domain name, and trademarking. Made custom logo, background patterns, and stylized graphics in Adobe Photoshop/Illustrator.</h5>
-    <div class="row">
-        <div class="column">
-            <h5 style="margin-left: 4%; margin-top: 0%; word-wrap: break-word;"><i>DiosaDelights.com</i><li>Savannah Castanzo</li><li>(323) 844-0023</li></h5>
-        </div>
-    </div>
-    <h5 style="margin-left: 2%; margin-top: 0%; word-wrap: break-word; text-indent: 4%;">Promotional business website for live events. Custom domain, low cost, static deployment. Built from scratch using original artwork, content, and pictures. MVC built on .NET Framework in Visual Studios a mix of HTML/CSS, Javascript, and C#. Performed SEO via DA/PA analysis, local/optimized image hosting, navigation, image ids, meta tags/headlines, and keywords. Created custom logos, graphics, and CSS stylesheet. Established back end database for employees receiving forms, along with a front side for end users requesting pricing and availability. </h5>
+    
+    <!----------------------SECTION1------------------------>
+    <div class="parallax2">
+      <div class="rectangle" style="background-color: #bb6834; background-image: url('https://usercontent.irccloud-cdn.com/file/XrultFnN/geometric-patterns-1978688_960_720.png'); overflow-x: hidden; overflow-y: scroll;">
+        <h4 align="center">
+          Brandon Briseño
+        </h4>
         <div class="row">
-        <div class="column">
-            <h5 style="margin-left: 4%; margin-top: 0%; word-wrap: break-word;"><i>changecriminaljustice.org.com</i>
+          <div class="column">
+            <h5 style="margin-left: 4%; word-wrap: break-word;">1 University Dr,<br><br>Orange, CA, 92866</h5>
+          </div>
+          <div class="column">
+            <h5 style="text-align: right; margin-right: 4%; word-wrap: break-word;">1 (575) 779-1263<br><br>bbriseno877@gmail.com</h5>
+          </div>
         </div>
+        <div class="line"></div>
+        <h5 style="margin-left: 2%; word-wrap: break-word; ">OBJECTIVES</h5>
+        <h5 style="margin-left: 2%; word-wrap: break-word;  text-indent: 4%;">Approach global issues via statistical analysis and computer science-oriented models. Expand knowledge of high-performance computing, distributed systems, parallel programming, and quantum computing.</h5>
+        <div class="line"></div>
+        <div class="row">
+          <div class="column">
+            <h5 style="margin-left: 4%; word-wrap: break-word;">
+              EDUCATION<br><br>Chapman University<br>
+              <li>B.A. in Political Science</li>
+              <li>Minor in Computer Science</li>
+            </h5>
+          </div>
+          <div class="column">
+            <h5 style="text-align: right; margin-right: 4%; word-wrap: break-word;"><br><br>2014-2018</h5>
+          </div>
+        </div>
+        <h5 style="margin-left: 2%; word-wrap: break-word;">
+          RELAVANT COURSEWORK<br><br>
+          <div class="RC-indent">Computer Networking, Data Structures & Algorithms, Digital Logic, Business Law, & Separation of Powers and Public Policy</div>
+        </h5>
+        <div class="line"></div>
+        <div class="row">
+          <div class="column">
+            <h5 style="margin-left: 4%; word-wrap: break-word;">
+              EXPERIENCE<br><br>Communications Security Technician & Internship:<br><i>International Security Group, LLC</i>
+              <li>Richard DiSabatino</li>
+              <li>(818) 451-7684</li>
+            </h5>
+          </div>
+          <div class="column">
+            <h5 style="text-align: right; margin-right: 4%; word-wrap: break-word;"><br><br>2018-2019</h5>
+          </div>
+        </div>
+        <h5 style="margin-left: 2%; margin-top: 0%; word-wrap: break-word; text-indent: 4%;">Employed part-time and interned 80+ hours at a communications security agency. Sold encryption software for mobile devices, established secure VoIP services over private branch exchanges on landlines/cellular devices, performed hardware modifications, wrote procedural C code, and analyzed SIP packets in wireshark. Fixed broken mobile devices, shattered screens and faulty hardware. Set up secure communications for commercial use. Implemented several networking and encryption protocols. Explained basic mobile hardware/architecture to customers. Reduced general risk for security breaches, created user authentication/authorization, encrypted/decrypted (virtual) private networks, and established secure local area networks. Worked with physical components (network & power), mobile application layers, mobile networking support/infrastructure, and communication protocols. Fiddled with symmetric-key encryption algorithms (AES-256) and built a cipher from scratch. Researched applicable aspects of quantum computing towards cryptography and potential commercial uses with QuTiP in creating numerical simulations of open quantum systems.</h5>
+        <div class="row">
+          <div class="column">
+            <h5 style="margin-left: 4%; word-wrap: break-word;">
+              Freelance Web Developer:<br><i>2Reinas.com</i>
+              <li>Kasey Cosley</li>
+              <li>(904) 460-5940</li>
+            </h5>
+          </div>
+          <div class="column">
+            <h5 style="text-align: right; margin-right: 4%; word-wrap: break-word;">2016-2018</h5>
+          </div>
+        </div>
+        <h5 style="margin-left: 2%; margin-top: 0%; word-wrap: break-word; text-indent: 4%;">High-performance small business website for mostly photographic content and text. Written entirely in HTML/CSS. Completely scalable for mobile friendly browsing, fluid parallax scrolling for improved UX and engagement. Managed deployment, domain name, and trademarking. Made custom logo, background patterns, and stylized graphics in Adobe Photoshop/Illustrator.</h5>
+        <div class="row">
+          <div class="column">
+            <h5 style="margin-left: 4%; margin-top: 0%; word-wrap: break-word;">
+              <i>DiosaDelights.com</i>
+              <li>Savannah Castanzo</li>
+              <li>(323) 844-0023</li>
+            </h5>
+          </div>
+        </div>
+        <h5 style="margin-left: 2%; margin-top: 0%; word-wrap: break-word; text-indent: 4%;">Promotional business website for live events. Custom domain, low cost, static deployment. Built from scratch using original artwork, content, and pictures. MVC built on .NET Framework in Visual Studios a mix of HTML/CSS, Javascript, and C#. Performed SEO via DA/PA analysis, local/optimized image hosting, navigation, image ids, meta tags/headlines, and keywords. Created custom logos, graphics, and CSS stylesheet. Established back end database for employees receiving forms, along with a front side for end users requesting pricing and availability. </h5>
+        <div class="row">
+          <div class="column">
+            <h5 style="margin-left: 4%; margin-top: 0%; word-wrap: break-word;">
+            <i>changecriminaljustice.org.com</i>
+          </div>
+        </div>
+        <h5 style="margin-left: 2%; margin-top: 0%; word-wrap: break-word; text-indent: 4%;">Educational website created to build civic engagement and public awareness around the American criminal justice system. Built in Wordpress, but converted to HTML/CSS. Then ported over to an MVC in Visual Studios for backend purposes. Maintained the mySQL database to log legislative statutes (name, dates, content, etc) going through the U.S. House of Representatives and Senate. Website included custom user logins, authorization, and authentication. Javascript used to create a more dynamic UX and keep users engaged in learning about nonviolent prison reform.</h5>
+        <div class="line"></div>
+        <h5 style="margin-left: 2%; word-wrap: break-word;">
+          <br>ACTIVITIES<br><br>
+          <li> Second Harvest Food Bank Volunteer</li>
+          <li>National Speleological Society Member</li>
+          <li>SPSS Statistics, Git, Node, Wireshark, Asterisk PBX, Photoshop, VIM/Nano</li>
+          <li>Java, Python, C/C#/C++, Javascript, HTML/5, CSS</li>
+          <li>Unix/Linux, Mac OSX, Windows command language</li>
+        </h5>
+      </div>
     </div>
-    <h5 style="margin-left: 2%; margin-top: 0%; word-wrap: break-word; text-indent: 4%;">Educational website created to build civic engagement and public awareness around the American criminal justice system. Built in Wordpress, but converted to HTML/CSS. Then ported over to an MVC in Visual Studios for backend purposes. Maintained the mySQL database to log legislative statutes (name, dates, content, etc) going through the U.S. House of Representatives and Senate. Website included custom user logins, authorization, and authentication. Javascript used to create a more dynamic UX and keep users engaged in learning about nonviolent prison reform.</h5>
-    <div class="line"></div>
-    <h5 style="margin-left: 2%; word-wrap: break-word;"><br>ACTIVITIES<br><br>
-    	<li> Second Harvest Food Bank Volunteer</li>
-        <li>National Speleological Society Member</li>
-        <li>SPSS Statistics, Git, Node, Wireshark, Asterisk PBX, Photoshop, VIM/Nano</li>
-        <li>Java, Python, C/C#/C++, Javascript, HTML/5, CSS</li>
-        <li>Unix/Linux, Mac OSX, Windows command language</li>
-    </h5>
+    
+    <!----------------------BREAKER------------------------>
+    <div class="parallax-break-b">
+      <div id="Github" class= "para-header" style="background-color: rgba(52, 186, 187, 0.1);border: 15px double #34babb;">
+        <p>Github</p>
+      </div>
     </div>
-  </div>
-	
-  <!----------------------SECTION2------------------------>
-  <div class="parallax3">
-    <div id="Github" style="background-color: rgba(52, 186, 187, 0.1); border: 15px double #34babb; border-radius: 0.1em; text-align: center; font-size: 10vw; font-family: Megrim; font-color: #000000; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white, -2px 0 4px black, 0 2px 4px black, 2px 0 4px  black, 0 -2px 4px black; font-weight: bold; position: relative;">Github</div>
-  	<div class="rectangle" style="overflow-x: hidden; overflow-y: scroll; background-color: #34babb; background-image: url('https://usercontent.irccloud-cdn.com/file/ahPqNvR1/computer-3163436_960_720.png')">
-    <div id="grid">
-      <div><a href="https://github.com/brise105/DataStructures"> <img src="https://raw.githubusercontent.com/brise105/ImageHosting/master/Website/stack.png" style="width: 75%; height: 75%; padding-top: 4%;"> </a><span>Generic Data Structures</span></div>
-      <div><a href="https://github.com/brise105"> <img src="https://raw.githubusercontent.com/brise105/ImageHosting/master/Website/shannons-scheme1.png" style="width: 70%; height: 70%; padding-top: 4%;"> </a><span>128-bit AES Cipher</span></div>
-      <div><a href="https://github.com/brise105/GameOfLife"> <img src="https://raw.githubusercontent.com/brise105/ImageHosting/master/Website/tree.png" style="width: 75%; height: 75%; padding-top: 4%;"> </a><span>Game of Life</span></div>
-      <div><a href="https://github.com/brise105/IRCClient"> <img src="https://raw.githubusercontent.com/brise105/ImageHosting/master/Website/ircbot.png" style="width: 75%; height: 75%; padding-top: 2%;"> </a><span>IRC Automation & Chat Client</span></div>
-      <div><a href="https://github.com/brise105/rockpaperscissors"><img src="https://raw.githubusercontent.com/brise105/ImageHosting/master/Website/udp2.png" style="width: 75%; height: 75%; padding-top: 2%;"></a><span>TCP Chat Client+Server</span></div>
-      <div><a href="https://github.com/brise105"><img src="https://raw.githubusercontent.com/brise105/ImageHosting/master/Website/pbx.png" style="width: 100%; height: 60%; padding-top: 8%;"></a><span>Asterisk PBX Configurations</span></div>
+    
+    <!----------------------SECTION2------------------------>
+    <div class="parallax3">
+      <div class="rectangle" style="overflow-x: hidden; overflow-y: scroll; background-color: #34babb; background-image: url('https://usercontent.irccloud-cdn.com/file/ahPqNvR1/computer-3163436_960_720.png')">
+        <div id="grid">
+          <div><a href="https://github.com/brise105/DataStructures"> <img src="https://raw.githubusercontent.com/brise105/ImageHosting/master/Website/stack.png" style="width: 75%; height: 75%; padding-top: 4%;"> </a><span>Generic Data Structures</span></div>
+          <div><a href="https://github.com/brise105"> <img src="https://raw.githubusercontent.com/brise105/ImageHosting/master/Website/shannons-scheme1.png" style="width: 70%; height: 70%; padding-top: 4%;"> </a><span>128-bit AES Cipher</span></div>
+          <div><a href="https://github.com/brise105/GameOfLife"> <img src="https://raw.githubusercontent.com/brise105/ImageHosting/master/Website/tree.png" style="width: 75%; height: 75%; padding-top: 4%;"> </a><span>Game of Life</span></div>
+          <div><a href="https://github.com/brise105/IRCClient"> <img src="https://raw.githubusercontent.com/brise105/ImageHosting/master/Website/ircbot.png" style="width: 75%; height: 75%; padding-top: 2%;"> </a><span>IRC Automation & Chat Client</span></div>
+          <div><a href="https://github.com/brise105/rockpaperscissors"><img src="https://raw.githubusercontent.com/brise105/ImageHosting/master/Website/udp2.png" style="width: 75%; height: 75%; padding-top: 2%;"></a><span>TCP Chat Client+Server</span></div>
+          <div><a href="https://github.com/brise105"><img src="https://raw.githubusercontent.com/brise105/ImageHosting/master/Website/pbx.png" style="width: 100%; height: 60%; padding-top: 8%;"></a><span>Asterisk PBX Configurations</span></div>
+        </div>
+      </div>
     </div>
+    
+    <!----------------------BREAKER------------------------>
+    <div class="parallax-break-c">
+      <div id="Portfolio" class= "para-header" style="background-color: rgba(121, 52, 187, 0.1); border: 15px double #7934bb;">
+        <p>Portfolio</p>
+      </div>
     </div>
-  </div>
-	
-  <!----------------------SECTION3------------------------> 
-  <div class="parallax4">
-    <div id="Portfolio" style="background-color: rgba(121, 52, 187, 0.1); border: 15px double #7934bb; border-radius: 0.1em; text-align: center; font-size: 10vw; font-family: Megrim; font-color: #000000; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white, -2px 0 4px black, 0 2px 4px black, 2px 0 4px  black, 0 -2px 4px black; font-weight: bold; position: relative;">Portfolio</div>
-  	<div class="rectangle" style="overflow-x: hidden; overflow-y: hidden; background-color: #7934bb; background-image: url('https://raw.githubusercontent.com/brise105/ImageHosting/master/Website/seamless-7.png')">
-<h4 style="color: white; text-align: center;">Your website goes here!</h4>
-<h5 style="font-weight: 1; color: white; text-align: center;">If you or anyone you know is looking for a custom and affordable website, please tell them I am seeking portfolio work.<br><br>Rates begin around $160 (including domain name and hosting services)!</h5>
+    
+    <!----------------------SECTION3------------------------> 
+    <div class="parallax4">
+      <div class="rectangle" style="overflow-x: hidden; overflow-y: hidden; background-color: #7934bb; background-image: url('https://raw.githubusercontent.com/brise105/ImageHosting/master/Website/seamless-7.png')">
+        <h4 style="color: white; text-align: center;">Your website goes here!</h4>
+        <h5 style="font-weight: 1; color: white; text-align: center;">If you or anyone you know is looking for a custom and affordable website, please tell them I am seeking portfolio work.<br><br>Rates begin around $160 (including domain name and hosting services)!</h5>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
