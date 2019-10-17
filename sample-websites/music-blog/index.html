@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Brandon Briseno">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+<style>
+  html, body {
+    margin:0;
+    padding:0;
+    
+  }
+  
+  .button {
+    background-color: #000000;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+  }
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f40;
+  }
+
+  .button1:hover {
+    background: #f40 url(https://ua-1.cdn-fullscreendirect.com/10523/2018_0125_10523_7931.jpeg) 50% repeat;
+    background-image: url(https://ua-1.cdn-fullscreendirect.com/10523/2018_0125_10523_7931.jpeg);
+    color: white;
+  }
+  
+  .container: {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  
+  .banner1 {
+    background-image: url('https://i.imgur.com/n2c1GcI.jpg');
+    background-size:100%,100%;
+    background-repeat: no-repeat;
+    height: 20vw;  
+  }
+  
+  .content {
+  }
+  
+  .chunk {
+    background: #f40 url(https://ua-1.cdn-fullscreendirect.com/10523/2018_0125_10523_7931.jpeg) 50% repeat;
+    background-image: url(https://ua-1.cdn-fullscreendirect.com/10523/2018_0125_10523_7931.jpeg);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: initial;
+    background-repeat-x: repeat;
+    background-repeat-y: repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(255, 68, 0);
+    content: "";
+    height: 2vw;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: relative;
+    z-index: 0;
+  }
+  
+  #grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-flow: row;
+    justify-content: center;
+    grid-template-rows: repeat(auto-fill, 200px);
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-auto-columns: 200px;
+    grid-auto-rows: 200px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #grid>div {
+    background: #f40 url(https://ua-1.cdn-fullscreendirect.com/10523/2018_0125_10523_7931.jpeg) 50% repeat;
+    background-image: url(https://ua-1.cdn-fullscreendirect.com/10523/2018_0125_10523_7931.jpeg);
+    text-align: center;
+    position: relative;
+  } 
+
+  #grid> div span {
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom:0;
+  }
+  
+  .parallax {
+	background-image: url('');
+    background-color: grey;
+	height: 100%; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: repeat;
+	background-size: auto;
+	-webkit-overflow-scrolling: touch;
+  }
+  
+  .rectangle {
+    background: #f40 url(https://ua-1.cdn-fullscreendirect.com/10523/2018_0125_10523_7931.jpeg) 50% repeat;
+    background-image: url(https://ua-1.cdn-fullscreendirect.com/10523/2018_0125_10523_7931.jpeg);
+	height: 303px;
+	width: 75vw;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+	background-color: #ffffff;
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	overflow-y: scroll;
+	overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {display: none;}
+  
+</style>
+</head>
+
+<body>
+<div class="container">
+  <div class="banner1">
+    <div id="Listen" style="font-family: Quicksand; font-size: 6vw; font-color: #000000; font-weight: bold; text-align: center; position: relative; top: 4vw; z-index: 1;">Sample Music Blog</div>
+    <div class="chunk" style="top: 1vw !important; width: 54vw;"></div>
+  </div>
+  </div>
+<div class="container">
+   <div class="content">
+    <div id="News" style="font-family: Quicksand; font-size: 6vw; font-color: #000000; font-weight: bold; text-align: center; position: relative; z-index: 1;">Latest News</div>
+    <div class="chunk" style="top: -3vw; width: 36vw;"></div>
+  </div>
+  <div id="grid">
+  <div><a href=""> <img src="" style="width: 75%; height: 75%; padding-top: 4%;"> </a><span></span></div>
+  <div><a href=""> <img src="" style="width: 70%; height: 70%; padding-top: 4%;"> </a><span></span></div>
+  <div><a href=""> <img src="" style="width: 75%; height: 75%; padding-top: 4%;"> </a><span></span></div>
+  <div><a href=""> <img src="" style="width: 75%; height: 75%; padding-top: 2%;"> </a><span></span></div>
+  </div>
+    <center><button class="button button1">View More</button></center>
+    <p></p>
+</div>
+
+  <div class="parallax">
+  <p></p>
+      <div id="Biography" style="font-family: Quicksand; font-size: 6vw; font-color: #000000; font-weight: bold; text-align: center; position: relative; z-index: 1;">Biography</div>
+    <div class="chunk" style="top: -3vw; width: 32vw;"></div>
+  	  	<div class="txtbox">
+         <p style="margin-top: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi facilisis finibus magna, ac tincidunt sem tincidunt sit amet. Phasellus nec odio vel sem mollis accumsan. Cras vestibulum tempor dolor sit amet consequat. In egestas placerat neque ac sollicitudin. Donec mattis sagittis nulla eget faucibus. Quisque ligula leo, tristique in odio ac, lobortis dignissim dolor. Nam sed iaculis ex. Integer tristique lobortis risus vel sodales. Vivamus consequat lectus quis erat cursus, nec fermentum lectus semper. Duis orci urna, pharetra et dui et, porta gravida felis. Donec nisl urna, suscipit at sem a, blandit facilisis libero. Etiam eu maximus urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget eros tempus, venenatis erat ut, condimentum odio. Cras quam libero, suscipit eget felis in, vulputate luctus ex. Integer convallis quis leo et pharetra.
+
+In malesuada diam quis leo ornare, ac vestibulum diam pharetra. Morbi sollicitudin odio neque. Nunc pharetra lorem ut lectus porttitor egestas. Maecenas nunc ipsum, varius vel sapien vel, vehicula auctor libero. Cras facilisis lorem eros, quis congue augue pharetra sed. Praesent massa mauris, vestibulum ac diam vel, posuere dapibus enim. Donec vulputate eros non lectus consectetur suscipit. Donec vel pharetra diam. Etiam dapibus, turpis non rhoncus efficitur, diam ipsum congue ligula, sit amet sollicitudin ligula sapien finibus magna. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+Integer eget ornare sapien, non lacinia velit. Nullam aliquet dictum ipsum, a commodo velit. Aliquam erat volutpat. Proin ac sollicitudin est, eget pellentesque odio. Suspendisse ante tellus, convallis quis lorem ac, feugiat hendrerit quam. Aliquam vehicula ligula vel orci iaculis pharetra. Phasellus sed arcu finibus, consectetur neque vitae, gravida tortor. Sed placerat vulputate tortor at luctus. Maecenas consequat lobortis rhoncus.
+
+Integer tincidunt nibh id est mollis, sit amet ultrices dui ornare. Phasellus commodo urna sed dapibus volutpat. In lacinia non mauris et tincidunt. Vestibulum dapibus, augue id pharetra molestie, libero dolor pulvinar ligula, viverra feugiat quam magna in erat. Aliquam ullamcorper dignissim metus in feugiat. Nunc consequat tincidunt ultrices. Nam at tortor ac velit laoreet feugiat. Proin placerat iaculis nulla, vitae cursus velit feugiat sit amet. Vivamus sed mi dui. Etiam ullamcorper laoreet libero, nec molestie mauris tempus ac. Phasellus facilisis felis eget felis ornare, ac commodo nulla mattis. Cras feugiat sit amet odio eget elementum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dolor ligula, auctor ac rhoncus sed, auctor vulputate nisi. Fusce interdum magna diam, nec maximus erat efficitur id.</p>
+  <p></p>
+        </div>
+  </div>
+<div class="container">
+  <div id="Listen-Now" style="font-family: Quicksand; font-size: 6vw; font-color: #000000; font-weight: bold; text-align: center; position: relative; z-index: 1;">Listen Now</div>
+  <div class="chunk" style="top: -3vw; width: 34vw;"></div>
+  <p></p>
+  <div class="rectangle" style='text-align:center; padding:5px;'>
+  <iframe width="98%" height="300" scrolling="no" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/307699719&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+  </div>
+  <p></p>
+</div>
+</body>
+</html>
